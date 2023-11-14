@@ -224,10 +224,8 @@ const Player: React.FC = () => {
     nowPlayingTrackOrderRef.current = _nowPlayingTrack.order;
     _setNowPlayingTrack(_nowPlayingTrack);
   };
-  const [
-    nowPlayingTrackMetaData,
-    setNowPlayingTrackMetaData,
-  ] = useState<FetchAudioMetaDataByAudioIdOutput | null>(null);
+  const [nowPlayingTrackMetaData, setNowPlayingTrackMetaData] =
+    useState<FetchAudioMetaDataByAudioIdOutput | null>(null);
   const [nowPlayingS3SignedUrl, setNowPlayingS3SignedUrl] = useState('');
 
   // Whether is fetching album cover.

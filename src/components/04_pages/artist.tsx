@@ -213,9 +213,8 @@ export const Artists: React.FC = () => {
   };
 
   // Now selected artst's track no
-  const [tracksOfNowSelectedArtist, setTracksOfNowSelectedArtist] = useState<
-    (TracksListProps | undefined)[]
-  >();
+  const [tracksOfNowSelectedArtist, setTracksOfNowSelectedArtist] =
+    useState<(TracksListProps | undefined)[]>();
 
   // AudioIds to play in player page.
   const [tracksToBePlayedMap, setTracksToBePlayedMap] = useState(new Map());

@@ -42,7 +42,7 @@ export const AuthContext = React.createContext<IAuthStateHooks>({} as IAuthState
 // Cognito UserData
 export interface IUserDataStateHooks {
   // eslint-disable-next-line
-  user: any | undefined; // Using object type is restricted, but amplify is using object type yet. 
+  user: any | undefined; // Using object type is restricted, but amplify is using object type yet.
   // eslint-disable-next-line
   setUser: React.Dispatch<React.SetStateAction<any | undefined>>;
 }
@@ -59,7 +59,6 @@ export interface ILanguageContext {
 export const LanguageContext = React.createContext<ILanguageContext>({} as ILanguageContext);
 
 export const App: React.FC = () => {
-
   return (
     <>
       <Switch>
